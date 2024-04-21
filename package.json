@@ -4,8 +4,8 @@
   "description": "Learning project",
   "main": "index.js",
   "scripts": {
-    "build": "rd /s /q dist && webpack --mode production",
-    "build:linux": "rm -r dist & webpack --mode production",
+    "build": "rd /s /q dist && ./node_modules/.bin/webpack --mode production",
+    "build:linux": "rm -r dist & ./node_modules/.bin/webpack --mode production",
     "dev": "webpack serve",
     "deploy": "gh-pages -d dist"
   },
