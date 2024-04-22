@@ -1,7 +1,9 @@
+import { API_URL, USER_TOKEN } from "../../config";
+
 const config = {
-  baseUrl: 'https://nomoreparties.co/v1/plus-cohort-18/',
+  baseUrl: API_URL,
   headers: {
-    authorization: 'd95e8e0f-5717-4536-87da-f10af028f83a',
+    authorization: USER_TOKEN,
     'Content-Type': 'application/json; charset=UTF-8'
   }
 }
